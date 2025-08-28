@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background: #f3f4f6; /* हल्का बैकग्राउंड */
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+main .left {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background: #0f172a;
+  color: #f1f5f9;
+  padding: 1rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  overflow: auto;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+}
+
+main .left .review:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  overflow: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
